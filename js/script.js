@@ -8,15 +8,16 @@ function play(){
     
     removeFirstNotification();
     const loose = document.getElementById('error');
+    const win = document.getElementById('error');
     loose.classList.add('d-none');
     const NUM_BOMB = 16;
     const bombsPosition = [];  
-    let score = 0;
+    let score = 1;
     let selettore;
     
     
     let scoretable = document.getElementById('punteggio');
-    
+    scoretable.innerHTML= '';
     
 
     // selettore della difficoltà del livello e pulitore del campo da gioco
@@ -85,8 +86,8 @@ function play(){
                  this.classList.add('green');
                  let highscore = ' ' + score++;
                  console.log(score)
-
-                 scoretable.append(highscore);
+                  scoretable.innerHTML = ''  
+                  scoretable.innerHTML = 'Score: ' + highscore; 
                  
                 //  cell.removeEventListener('click');
             };
@@ -97,15 +98,19 @@ function play(){
         function endGame(){
             const squares = document.getElementsByClassName('square');
             for(let i = 0; i < squares.length; i ++){
-                
                 squares[i].classList.add('green');
             }
             if(score === MAX_ATTEMPTS){
                 console.log('you win');
                 
+                win.classList.remove('d-none');
+                const divAlert = notificationError('hai vinto!');
+                win.append(divAlert); 
+                
+                
             }else{
                 console.log('you lose')
-                const loose = document.getElementById('error');
+                // const loose = document.getElementById('error');
                 loose.classList.remove('d-none');
                 const divAlert = notificationError('hai perso!');
                 loose.append(divAlert);  
