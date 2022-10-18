@@ -99,6 +99,7 @@ function play(){
             const squares = document.getElementsByClassName('square');
             for(let i = 0; i < squares.length; i ++){
                 squares[i].classList.add('green');
+                
             }
             if(score === MAX_ATTEMPTS){
                 console.log('you win');

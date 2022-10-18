@@ -33,9 +33,9 @@ main {
    
 }
 
-/* .griglia{
+.griglia{
     position: relative;
-} */
+}
 
 .square{
     display: flex;
@@ -68,13 +68,13 @@ main {
 
 #error{
     z-index: 900;
-    /* width: 500px;
+    width: 500px;
     height: 500px;
     left: 50%;
     top: 50%;
    
     transform: translate(-50%, -50%);
-    position: absolute; */
+    position: absolute;
 }
 
 
