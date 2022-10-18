@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body {
+    font-family: 'Staatliches', cursive;
+    
+}
+
+header, footer {
+    background-color: black;
+    height: 80px;
+}
+
+main {
+    
+    height: calc(100vh - 160px);
+    overflow-y: auto;
+}
+
+.grid{
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 500px;
+    height: 500px;
+   
+}
+
+.griglia{
+    position: relative;
+}
+
+.square{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+    border: 2px solid black;
+}
+
+.green{
+    box-shadow: inset 0 0 10px #214b49;
+    background-color: cadetblue;
+    
+    background-image: url(../img/safe.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+}
+
+.red{
+    box-shadow: inset 0 0 10px #500202;
+    background-color: rgb(176, 10, 10);
+    background-image: url(../img/bomba-01.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#error{
+    
+    width: 500px;
+    height: 500px;
+    left: 50%;
+    top: 50%;
+   
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+   
+
+
+

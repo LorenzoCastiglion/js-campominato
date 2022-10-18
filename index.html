@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/libreria.js"></script>
+    <script src="./js/script.js" defer></script>
+    <title>campo minato</title>
+</head>
+<body>
+
+    <div class="vh-100" >
+        <header class="d-flex justify-content-around align-items-center text-white">
+           <div class="col-3 p-5"><img src="./img/boolean-logo.png" class="img-fluid"  alt=""></div>
+           <div class="d-flex">
+            <select class="form-control" name="livello" id="livello">
+                <option value="1">Easy-Peasy</option>
+                <option value="2">Not-so-peasy</option>
+                <option value="3">Hell</option>
+            </select>
+            <button class="btn btn-secondary ms-1" id="play">Play</button>
+           </div>
+
+        </header>
+
+        <main>
+            <h2 class="text-center p-2">Select a difficulty and click play to begin!</h2>
+            <div class=" d-flex justify-content-center align-items-center griglia" id="game-field">
+           
+            </div>
+            <div class="d-flex justify-content-center align-items-center " id="error"></div>
+
+            <div id="punteggio" class="d-flex justify-content-center align-items-center">Score:</div>
+        </main>
+
+        <footer class="d-flex m-auto align-items-center text-white">
+
+            <p class="ms-5">Made with &hearts; by Booleaner® lrnz.</p>
+
+        </footer>
+
+    </div>
+    
+
+    
+</body>
+</html>
