@@ -94,7 +94,9 @@ function play(){
 
         }
         )
+        
 
+        //condizione fine game
         function endGame(){
             const squares = document.getElementsByClassName('square');
             for(let i = 0; i < squares.length; i ++){
@@ -103,7 +105,6 @@ function play(){
             }
             if(score === MAX_ATTEMPTS){
                 console.log('you win');
-                
                 win.classList.remove('d-none');
                 const divAlert = notificationError('hai vinto!');
                 win.append(divAlert); 
